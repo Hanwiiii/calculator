@@ -18,14 +18,14 @@ const divide = function(a, b) {
     return a / b; 
 };
 
-const operate = function () {
+const operate = function (a, b, operator) {
     if(operator === "add") {
-        return add();
+        return add(a, b);
     } else if (operator === "subtract") {
-        return subtract();
+        return subtract(a, b);
     } else if (operator === "multiply") {
-        return multiply();
+        return multiply(a, b);
     } else if (operator === "divide") {
-        return divide();
+        return divide(a, b);
     }
 }
